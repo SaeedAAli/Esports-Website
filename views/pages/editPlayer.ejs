@@ -1,0 +1,14 @@
+<%- include('../partials/head') %>
+
+<div class="container px-5 my-5">
+    <h1>Edit  Player</h1>
+    <div class="alert alert-danger" role="alert">
+        Once edited, it wont return Back
+      </div>
+    <form action="http://localhost:3000/players/edit/<%=player.player_id%>" method="post">
+        <p>Name: <input class="form-control" name="name" type="text" /></p>
+        <p>Email: <input class="form-control" name="email" type="text" /></p>   
+        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Edit Player</button>
+    </form>
+</div>
+<%- include('../partials/footer') %>

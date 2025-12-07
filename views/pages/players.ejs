@@ -1,0 +1,18 @@
+<%- include('../partials/head') %>
+
+<body>
+    <div class="container">
+        <h1>Players</h1>
+        <div class="alert alert-success" role="alert">
+            <% if (typeof query.name !== "undefinded") { %>
+                <p>Last Changed: <%= query.name %></p>
+            <% } %>
+            </div>
+        <div class="row">
+            <% playerArr.forEach((player)=> { %>
+                <%- include('../partials/playersdisplay', {player: player}) %>
+            <% }) %>
+        </div>
+    </div>
+</body>
+<%- include('../partials/footer') %>

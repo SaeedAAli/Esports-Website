@@ -1,0 +1,13 @@
+<%- include('../partials/head') %>
+
+<div class="container px-5 my-5">
+    <div class="alert alert-danger" role="alert">
+        Once deleted, it wont return Back
+      </div>
+    <p> Delete Game?</p>
+    <form action="http://localhost:3000/games/delete/<%=game.game_id%>" method="post">
+        <input type="hidden" name="name" value="<%=game.name%>" />
+        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Delete game</button>
+    </form>
+</div>
+<%- include('../partials/footer') %>

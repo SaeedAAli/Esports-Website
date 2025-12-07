@@ -1,0 +1,11 @@
+
+<%- include('../partials/head') %>
+    <h1>Add a Player</h1>
+    <form action="http://localhost:3000/Players/add"  method="post">
+        <p>Player: <input class="form-control" name="name" type="text" width="250px"/></p>
+        <p>Email: <input class="form-control" name="email" type="text"/></p>
+        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Add Player</button>
+    </form>
+</div>
+<%- include('../partials/footer') %>
+

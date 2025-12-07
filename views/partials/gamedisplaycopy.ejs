@@ -1,0 +1,6 @@
+<h5><%= game.name %></h5>
+<p><strong>Team size:</strong> <%= game.team_size %></p>
+<p><strong>Match duration:</strong> <%= game.duration %></p>
+<a href="/games" button class="btn btn-primary btn-lg" id="submitButton" type="submit" > Back</button></a>
+<a href="/games/edit/<%=game.game_id%>" button class="btn btn-primary btn-lg" id="submitButton" type="submit" > Edit</button></a>
+<a href="/games/delete/<%=game.game_id%>" button class="btn btn-primary btn-lg" id="submitButton" type="submit" > Delete</button></a>

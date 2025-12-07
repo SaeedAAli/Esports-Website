@@ -1,0 +1,13 @@
+<%- include('../partials/head') %>
+
+<body>
+    <div class="container">
+        <h1>Players</h1>
+        <div class="row">
+            <% playerArr.forEach((player)=> { %>
+                <%- include('../partials/playersdisplaycopy', {player: player}) %>
+            <% }) %>
+        </div>
+    </div>
+</body>
+<%- include('../partials/footer') %>
